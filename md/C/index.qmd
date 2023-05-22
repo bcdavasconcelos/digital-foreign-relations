@@ -1,0 +1,50 @@
+---
+title: "Publicação e divulgação"
+sidebar: false
+toc: false
+page-layout: full
+---
+
+
+## C. Publicação e divulgação
+
+- [Pandoc](https://pandoc.org/)
+- [Markdown](https://www.markdownguide.org/)
+- [Scrivener](https://www.literatureandlatte.com/scrivener/overview)
+- [Ulysses](https://ulysses.app/)
+- [Manuscripts](https://www.manuscriptsapp.com/)
+- [iA Writer](https://ia.net/writer)
+- [Bear](https://bear.app/)
+- [Drafts](https://getdrafts.com/)
+- [Zettlr](https://www.zettlr.com/)
+- [Microsoft Word](https://www.microsoft.com/pt-br/microsoft-365/word)
+- [LibreOffice](https://pt-br.libreoffice.org/)
+- [Google Docs](https://www.google.com/intl/pt-BR/docs/about/)
+- [Apache OpenOffice](https://www.openoffice.org/pt-br/)
+- [WPS Office](https://www.wps.com/pt-BR/)
+- [OnlyOffice](https://www.onlyoffice.com/pt/)
+- [Zoho Writer](https://www.zoho.com/writer/)
+- [Calligra Words](https://calligra.org/words/)
+- [AbiWord](https://www.abisource.com/)
+- [SoftMaker FreeOffice](https://www.freeoffice.com/pt/)
+- [WordPerfect](https://www.wordperfect.com/en/)
+- [Obsidian](https://obsidian.md/)
+- [Roam Research](https://roamresearch.com/)
+- [Logseq](https://logseq.com/)
+- [RemNote](https://www.remnote.io/)
+- [Notion](https://www.notion.so/)
+- [TiddlyWiki](https://tiddlywiki.com/)
+
+
+
+
+- [Pandoc](https://pandoc.org/)
+- [Markdown](https://www.markdownguide.org/)
+- [Quarto](https://quarto.org/)
+- [Zenodo](https://zenodo.org/)
+- [Figshare](https://figshare.com/)
+- [Open Science Framework](https://osf.io/)
+- [Open Science Framework Preprints](https://osf.io/preprints/)
+
+- [Cite Tools Quarto Extension at GitHub](https://)
+

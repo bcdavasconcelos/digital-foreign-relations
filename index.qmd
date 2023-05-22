@@ -1,0 +1,76 @@
+---
+title: "RI Digitais"
+subtitle: "Um apanhado dos recursos digitais de pesquisa em Relações Internacionais"
+details: |
+  PUC Minas Poços de Caldas • Maio 2023<br>Curso de Relações Internacionais da Pontifícia Universidade Católica de Minas Gerais
+sidebar: false
+toc: false
+page-layout: full
+format:
+  html:
+    template-partials:
+      - html/home/title-block.html
+course-logo: /files/course-icon.png
+---
+
+
+
+::: {.home}
+:::::: {.grid .course-details}
+::::::::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+### Palestrante
+
+- {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
+<!-- - {{< fa university >}} &nbsp; {{< var instructor.office >}} -->
+- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
+:::::::::
+::::::::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+::::::::::::  {.g-col-6}
+### Horário
+
+- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
+- {{< fa clock >}} &nbsp; {{< var course.time >}}
+- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
+::::::::::::
+:::::::::::: {.g-col-6}
+<!-- > Vivemos sob uma forma de governo que não se baseia nas instituições de nossos vizinhos; ao contrário, servimos de modelo a alguns ao invés de imitar outros. Seu nome, como tudo depende não de poucos mas da maioria, é democracia. -->
+::::::::::::
+:::::::::
+::::::::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+:::::::::::: {.g-col-6}
+> ’Chrōmetha gar politeia ou zēlousē tous tōn pelas nomous, paradeigma de mallon autoi ontes tisin ē mimoumenoi heterous. kai onoma men dia to mē es oligous all’ es pleionas oikein dēmokratia keklētai^[’Χρώμεθα γὰρ πολιτείᾳ οὐ ζηλούσῃ τοὺς τῶν πέλας νόμους, παράδειγμα δὲ μᾶλλον αὐτοὶ ὄντες τισὶν ἢ μιμούμενοι ἑτέρους. καὶ ὄνομα μὲν διὰ τὸ μὴ ἐς ὀλίγους ἀλλ’ ἐς πλείονας οἰκεῖν δημοκρατία κέκληται·]\
+> Tucídides, *Historiae* II 36 [-@ThuHist]^[Trecho da oração fúnebre proferida por Péricles, em 431 a.C., por ocasião do fim do primeiro ano da guerra do Peloponeso, recontada pelo historiador ateniense Tucídides. Péricles foi um eminente político que liderou a democracia ateniense em seu período áureo e que proferiu este discurso com o propósito de elevar a moral da população, exaltando os valores do modelo institucional ateniense em detrimento ao modelo militarista e oligárquico espartano.]
+::::::::::::
+:::::::::::: {.g-col-6}
+> Vivemos sob uma forma de governo que não se baseia nas instituições de nossos vizinhos; ao contrário, servimos de modelo a alguns ao invés de imitar outros. Seu nome, como tudo depende não de poucos mas da maioria, é democracia.
+::::::::::::
+:::::::::
+::::::
+:::
+
+
+
+---
+references:
+- id: ThuHist
+  abstract: |-
+    Tucídides
+    2 vols
+  author:
+    - family: Thucydides
+      given: ''
+  call-number: '0003.001'
+  citation-key: ThuHist
+  container-title: Thucydidis Historiae
+  editor:
+    - family: Jones
+      given: H. S.
+  event-place: Oxford
+  issued:
+    - year: 1942
+  publisher: Clarendon
+  publisher-place: Oxford
+  title: Historiae
+  title-short: Thu
+  type: chapter
+---
