@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.336">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -21,7 +21,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -64,17 +117,15 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="RI Digitais - Publicação e divulgação">
-<meta property="og:image" content="https://compasp23.classes.andrewheiss.com/files/social-image-sp23.png">
+<meta property="og:description" content="">
+<meta property="og:image" content="/files/social-image-sp23.png">
 <meta property="og:site-name" content="RI Digitais">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:image:height" content="641">
-<meta property="og:image:width" content="1281">
 <meta name="twitter:title" content="RI Digitais - Publicação e divulgação">
-<meta name="twitter:image" content="https://compasp23.classes.andrewheiss.com/files/social-image-sp23.png">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="/files/social-image-sp23.png">
 <meta name="twitter:creator" content="@andrewheiss">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="641">
-<meta name="twitter:image-width" content="1281">
 </head>
 
 <body class="nav-fixed">
@@ -118,12 +169,26 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#linguagens-de-marcação" id="toc-linguagens-de-marcação" class="nav-link active" data-scroll-target="#linguagens-de-marcação">Linguagens de Marcação</a>
+  <ul class="collapse">
+  <li><a href="#xml" id="toc-xml" class="nav-link" data-scroll-target="#xml">XML</a></li>
+  <li><a href="#html" id="toc-html" class="nav-link" data-scroll-target="#html">HTML</a></li>
+  <li><a href="#markdown" id="toc-markdown" class="nav-link" data-scroll-target="#markdown">Markdown</a></li>
+  <li><a href="#latex" id="toc-latex" class="nav-link" data-scroll-target="#latex">LaTeX</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -142,49 +207,94 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="c.-publicação-e-divulgação" class="level2">
-<h2 class="anchored" data-anchor-id="c.-publicação-e-divulgação">C. Publicação e divulgação</h2>
+<section id="linguagens-de-marcação" class="level2">
+<h2 class="anchored" data-anchor-id="linguagens-de-marcação">Linguagens de Marcação</h2>
+<p>Como um computador é capaz de estabelecer a <em>função</em> dos diferentes elementos textuais? Em outras palavras, como ele poderia separar um título e o corpo do texto? Um texto com link e um texto sem link? Como ele poderia saber que uma determinada seção não é parte do texto, mas apenas contém informações sobre ele?</p>
+<p>A resposta para estas questões pode ser encontrada em um recurso conhecido como <em>linguagem de marcação</em> (<em>markup language</em>). Em linha gerais, cada linguagem de marcação funciona como um conjunto de regras para agregar atributos a elementos do texto utilizando etiquetas. Estas etiquetas indicam para um programa que uma parte do texto tem uma determinada função ou que deve ser exibida de tal e tal modo. Nesta seção, veremos alguns exemplos do uso da sintaxe de algumas das linguagens mais conhecidas.</p>
+<section id="xml" class="level3">
+<h3 class="anchored" data-anchor-id="xml">XML</h3>
+<p>Um dado importante que nós leigos costumamos ignorar é que todo texto com estrutura em um computador (sem exceção) usa alguma linguagem de marcação. Programas como o <em>Microsoft Word</em> e outros processadores de texto também costumam utilizar (um tipo próprio de) <em>XML</em>. Quando selecionamos alguma palavra e a transformamos em um título, por exemplo, o programa adiciona as etiquetas ao seu redor sem que nos demos conta.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</section>
+<section id="html" class="level3">
+<h3 class="anchored" data-anchor-id="html">HTML</h3>
+<p>A linguagem <strong>HTML</strong> é um excelente exemplo de como funciona uma linguagem de marcação convencional, não-minimalista. Ela usa etiquetas pré-definidas para representar uma página, sendo a linguagem utilizadas pelas páginas da internet e pelos e-books (arquivos com extensão <code>.``epub</code>, <code>.mobi</code> e <code>.azw</code>) (<em>cf.</em> <a href="https://www.w3schools.com/">W3Schools</a>). Para definir as seções utiliza-se: <code>&lt;``head``&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;``div``&gt;</code>; para definir elementos: <code>&lt;p&gt;</code>, <code>&lt;``table``&gt;</code>, <code>&lt;``form``&gt;</code>, <code>&lt;``image``&gt;</code> e <code>&lt;a&gt;</code>; para definir a formatação do texto: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> etc., <code>&lt;b&gt;</code> e <code>&lt;i&gt;</code>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;html&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;body&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;h1</span> <span class="er">id</span><span class="ot">=</span><span class="st">"título-de-nível-1"</span><span class="kw">&gt;</span>Título de nível 1<span class="kw">&lt;/h1&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;h2</span> <span class="er">id</span><span class="ot">=</span><span class="st">"título-de-nível-2"</span><span class="kw">&gt;</span>Título de nível 2<span class="kw">&lt;/h2&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;p&gt;</span>Texto em <span class="kw">&lt;em&gt;</span>itálico<span class="kw">&lt;/em&gt;</span>, e texto em <span class="kw">&lt;strong&gt;</span>negrito<span class="kw">&lt;/strong&gt;</span>.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;blockquote&gt;&lt;p&gt;</span>Texto de uma citação em bloco.<span class="kw">&lt;/p&gt;&lt;/blockquote&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;p&gt;</span>E um <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"www.google.com"</span><span class="kw">&gt;</span>link<span class="kw">&lt;/a&gt;</span>.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/body&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/html&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Trata-se de um exemplo muito simples de texto em HTML. Exemplos mais complexos podem ser encontrados selecionando um item aleatório de uma página da internet com o clique secundário e selecionando em seguida a opção “Inspecionar Elemento”, disponível na maior parte dos navegadores. A linguagem <strong>XML</strong> é um desdobramento de HTML e funciona do mesmo modo, com uma diferença significativa: não há etiquetas pré-definidas. É uma linguagem que serve, sobretudo, para guardar dados de uma maneira estruturada.</p>
+</section>
+<section id="markdown" class="level3">
+<h3 class="anchored" data-anchor-id="markdown">Markdown</h3>
+<p><strong>Markdown</strong>, em primeiro lugar, é a linguagem mais simples e minimalista disponível hoje. Seu nome é um trocadilho com a expressão <em>markup language</em> (<em>markup</em> ↑ <em>markdown</em> ↓) e arquivos utilizando esta linguagem geralmente levam a extensão <code>.md</code>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Ela foi <a href="https://daringfireball.net/projects/markdown/">criada em 2004</a> por <a href="https://en.wikipedia.org/wiki/John_Gruber">John Gruber</a> e <a href="http://www.aaronsw.com/weblog/001189">Aaron Swartz</a> com o propósito de possibilitar a geração de texto HTML (utilizado em todas as páginas da web) a partir de uma alternativa mais legível e com menos distrações (compare o bloco abaixo em <em>Markdown</em> com o seguinte utilizando <em>HTML</em>).</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Título de nível 1</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Título de nível 2</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>Texto em *itálico*, e texto em **negrito**.</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Texto de uma citação em bloco.</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>E um <span class="co">[</span><span class="ot">link</span><span class="co">](http://www.google.com)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>O que começou como uma opção bastante simples voltada apenas para a internet, evoluiu ao longo dos últimos 20 anos para se tornar uma linguagem extremamente popular com um bom conjunto de funcionalidades que preenche todos os requisitos para a produção de textos técnicos e acadêmicos (<em>cf.</em> <span class="citation" data-cites="Krewinkel2017">(<a href="#ref-Krewinkel2017" role="doc-biblioref">Krewinkel and Winkler 2017</a>)</span>). Isso foi possível graças ao desenvolvimento do Pandoc, um conversor universal de documentos desenvolvido pelo professor de filosofia J. MacFarlane (<span class="citation" data-cites="Pandoc">(<a href="#ref-Pandoc" role="doc-biblioref">2006</a>)</span>), que torna fácil a produção de arquivos em qualquer formato partindo de um simples arquivo em markdown.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>Para o humanista digital esta é uma linguagem extremamente relevante por dois motivos: (i.) é um dos meios mais fáceis marcar e estruturar um texto de fonte primária excessivamente longo; (ii.) é um dos meios mais práticos de registrar e manter anotações de pesquisa a longo prazo em um formato agnóstico que pode ser lido por qualquer programa e que não demanda que o usuário trabalhe constantemente utilizando um layout de impressão (<em>preview</em>), como se o texto fosse destinado à impressão imediata.</p>
+</section>
+<section id="latex" class="level3">
+<h3 class="anchored" data-anchor-id="latex">LaTeX</h3>
+<p>É interessante mencionar ainda a existência de uma linguagem chamada <strong>LaTeX</strong> (pronuncia-se <em>latek</em>, e não látex). Trata-se de um sistema de tipografia de alta qualidade, utilizado para preparar livros e artigos para publicação. Nas ciências naturais e na matemática estudantes aprenderem desde cedo a escrever utilizando LaTeX para facilitar o trabalho com equações. Nas ciências humanas dificilmente encontramos a oferta ou a exigência de conhecimentos sobre LaTeX. Ainda sim, conhecer um pouco sobre o sistema pode ser excepcionalmente útil para a preparação de textos para a publicação.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>O propósito de compartilhar estes exemplos das diferentes linguagens de marcação é auxiliar leitores a se familiarizarem com o conceito, pois aprender a ler e utilizar cada uma delas em detalhe é um processo que demanda tempo e disposição para estudar a documentação com as especificações de cada uma delas. Um recurso que pode auxiliar muito neste processo são os <em>editores de texto</em>, que contam com funções específicas para lidar com a sintaxe das linguagens de marcação, como, por exemplo, (i.) o realce da sintaxe, (ii.) a opção de autocompletar e (iii.) a análise em busca de erros.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Estudantes tem acesso gratuito ao <a href="https://education.github.com/pack">Github Pro</a> por meio do <a href="https://education.github.com/pack">Github Education Pack</a>. Para ter acesso, basta criar uma conta no Github e solicitar o pacote utilizando o seu e-mail institucional (<code>@pucminas</code>). Com o Github Pro, é possível utilizar o <a href="https://copilot.github.com/">Github Co-Pilot</a>, um assistente de programação baseado em “inteligência” artificial.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>. Além disso, você terá acesso a diversos outros serviços, como o <a href="https://www.overleaf.com">Overleaf</a>, os IDEs do <a href="https://www.jetbrains.com/">Jet Brains</a> e mais. Veja ainda: <a href="https://guides.github.com/">GitHub Guides</a>, <a href="https://desktop.github.com/">GitHub Desktop</a>, <a href="https://pages.github.com/">GitHub Pages</a></p>
+</div>
+</div>
+</div>
+<p><strong>Veja ainda:</strong></p>
 <ul>
-<li><p><a href="https://pandoc.org/">Pandoc</a></p></li>
-<li><p><a href="https://www.markdownguide.org/">Markdown</a></p></li>
-<li><p><a href="https://www.literatureandlatte.com/scrivener/overview">Scrivener</a></p></li>
-<li><p><a href="https://ulysses.app/">Ulysses</a></p></li>
-<li><p><a href="https://www.manuscriptsapp.com/">Manuscripts</a></p></li>
-<li><p><a href="https://ia.net/writer">iA Writer</a></p></li>
-<li><p><a href="https://bear.app/">Bear</a></p></li>
-<li><p><a href="https://getdrafts.com/">Drafts</a></p></li>
-<li><p><a href="https://www.zettlr.com/">Zettlr</a></p></li>
-<li><p><a href="https://www.microsoft.com/pt-br/microsoft-365/word">Microsoft Word</a></p></li>
-<li><p><a href="https://pt-br.libreoffice.org/">LibreOffice</a></p></li>
-<li><p><a href="https://www.google.com/intl/pt-BR/docs/about/">Google Docs</a></p></li>
-<li><p><a href="https://www.openoffice.org/pt-br/">Apache OpenOffice</a></p></li>
-<li><p><a href="https://www.wps.com/pt-BR/">WPS Office</a></p></li>
-<li><p><a href="https://www.onlyoffice.com/pt/">OnlyOffice</a></p></li>
-<li><p><a href="https://www.zoho.com/writer/">Zoho Writer</a></p></li>
-<li><p><a href="https://calligra.org/words/">Calligra Words</a></p></li>
-<li><p><a href="https://www.abisource.com/">AbiWord</a></p></li>
-<li><p><a href="https://www.freeoffice.com/pt/">SoftMaker FreeOffice</a></p></li>
-<li><p><a href="https://www.wordperfect.com/en/">WordPerfect</a></p></li>
-<li><p><a href="https://obsidian.md/">Obsidian</a></p></li>
-<li><p><a href="https://roamresearch.com/">Roam Research</a></p></li>
-<li><p><a href="https://logseq.com/">Logseq</a></p></li>
-<li><p><a href="https://www.remnote.io/">RemNote</a></p></li>
-<li><p><a href="https://www.notion.so/">Notion</a></p></li>
-<li><p><a href="https://tiddlywiki.com/">TiddlyWiki</a></p></li>
-<li><p><a href="https://pandoc.org/">Pandoc</a></p></li>
-<li><p><a href="https://www.markdownguide.org/">Markdown</a></p></li>
-<li><p><a href="https://quarto.org/">Quarto</a></p></li>
-<li><p><a href="https://zenodo.org/">Zenodo</a></p></li>
-<li><p><a href="https://figshare.com/">Figshare</a></p></li>
-<li><p><a href="https://osf.io/">Open Science Framework</a></p></li>
-<li><p><a href="https://osf.io/preprints/">Open Science Framework Preprints</a></p></li>
-<li><p><a href="https://">Cite Tools Quarto Extension at GitHub</a></p></li>
+<li><a href="https://pandoc.org/">Pandoc</a>, <a href="https://quarto.org/">Quarto</a> - para converter Markdown em documentos de Word, páginas HTML e arquivos PDF (e vice-versa)</li>
+<li><a href="https://zenodo.org/">Zenodo</a> - para criar DOIs para publicações digitais</li>
+<li><a href="https://www.microsoft.com/pt-br/microsoft-365/word">Microsoft Word</a></li>
+<li><a href="https://pt-br.libreoffice.org/">LibreOffice</a></li>
+<li><a href="https://www.google.com/intl/pt-BR/docs/about/">Google Docs</a></li>
+<li><a href="https://figshare.com/">Figshare</a></li>
+<li><a href="https://osf.io/">Open Science Framework</a>, <a href="https://osf.io/preprints/">Open Science Framework Preprints</a></li>
+<li><a href="https://">Cite Tools Quarto Extension at GitHub</a></li>
 </ul>
 
 
+
+</section>
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Krewinkel2017" class="csl-entry" role="listitem">
+Krewinkel, Albert, and Robert Winkler. 2017. <span>“Formatting Open Science: Agilely Creating Multiple Document Formats for Academic Manuscripts with Pandoc Scholar.”</span> <em>PeerJ Computer Science</em> 3: e112.
+</div>
+<div id="ref-Pandoc" class="csl-entry" role="listitem">
+MacFarlane, John. 2006. <span>“Pandoc: A Universal Document Converter.”</span>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Não há nenhum problema nesse procedimento, mas ao utilizar o formato docx, por exemplo, é importante ter consciência de que estamos armazenando nossas anotações em uma linguagem que apenas um programa específico de uma empresa privada consegue interpretar e exibir.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>A rigor, não há nada que obrigue o uso de uma extensão específica em arquivos de qualquer uma das linguagens apresentadas aqui. Todos contêm apenas texto plano e poderiam ser modificados para utilizar a extensão <code>.txt</code> sem qualquer prejuízo ou perda de dados. A extensão é apenas um modo de indicar a sintaxe utilizada para o programa que irá abrir o arquivo.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>“Because pandoc’s intermediate representation of a document is less expressive than many of the formats it converts between, one should not expect perfect conversions between every format and every other. Pandoc attempts to preserve the structural elements of a document, but not formatting details such as margin size. And some document elements, such as complex tables, may not fit into pandoc’s simple document model. <em>While conversions from pandoc’s Markdown to all formats aspire to be perfect, conversions from formats more expressive than pandoc’s Markdown can be expected to be lossy.</em>” <span class="citation" data-cites="Pandoc">(<a href="#ref-Pandoc" role="doc-biblioref">MacFarlane 2006</a>)</span> (ênfase nossa). Utilizando o Pandoc, é possível transformar um texto em Markdown em praticamente qualquer outro formato existente, de um eBook a um livro acabado, passando por documentos em <code>rtf</code>, <code>latex</code>, <code>docx</code> ou <code>html</code>. É mais fácil obter um produto com alta qualidade tipográfica utilizando Markdown + Pandoc do que qualquer outro processador de texto, como o <em>Word</em> (este texto, inclusive, foi redigido utilizando markdown).<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Para a preparação de minha própria tese, criei um modelo que facilita a conversão de documentos do formato Markdown para LaTeX (cf.&nbsp;<code>github.com/bcdavasconcelos/ABNTeX-o-matic</code>).<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Tendo em vista que a maior parte dos editores de texto compartilha de um núcleo comum de funções, como integração com o sistema git de versões e acesso integrado ao terminal/shell, a questão de qual programa utilizar é, em grande medida, uma questão de preço, preferências pessoais e de compatibilidade. Opções para Windows e Linux incluem <a href="https://code.visualstudio.com/">Visual Studio Code</a> e <a href="https://atom.io">Atom</a>; opções para macOS incluem, além destas três últimas, <a href="https://nova.app">Nova</a>, <a href="http://www.macromates.com/">TextMate</a> e <a href="https://www.barebones.com/products/bbedit/">BBEdit</a>. Eventualmente algumas tarefas serão mais fáceis de executar em um programa do que em outro, mas, em última instância, todos são bem equipados e capazes de realizar as tarefas mais importantes.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>O Co-Pilot pode ser utilizado como uma extensão em um IDE (<em>Integrated Development Environment</em>). Primeiro, baixe o <a href="https://code.visualstudio.com/">Visual Studio Code</a>; em seguida, instale a extensão do <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">Co-Pilot</a>. Por fim, faça login no Github Co-Pilot no VS Code.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -12,20 +12,11 @@ instructor:
   appointment_url: https://calendly.com/andrewheiss/
 
 course:
-  number: "PMAP 8441"
-  semester: "Spring 2023"
   days: "Segunda"
   time: "15:20"
-  location: "Auditório 3"
+  location: "Auditório do Prédio 9"
   dates: "22 de Maio, 2023"
   github: "https://www.github.com/andrewheiss/compasp23.classes.andrewheiss.com"
   url: "https://compasp23.classes.andrewheiss.com"
   copyright_year: "2023"
 
-university:
-  name: Georgia State University
-  url: "https://www.gsu.edu"
-
-school:
-  name: Andrew Young School of Policy Studies
-  url: "https://aysps.gsu.edu/"

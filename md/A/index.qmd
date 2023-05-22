@@ -4,39 +4,48 @@ citeproc: true
 reference-location: margin
 ---
 
+Toda pesquisa em ciências humanas inevitavelmente envolve três etapas, de pesquisa: preparação, execução e divulgação.
 
-A primeira fase de qualquer pesquisa é o levantamento das principais referências associadas a um determinado assunto. Nesta etapa, o pesquisador deve buscar por fontes primárias e secundárias, bem como por dados que possam ser utilizados para a análise do objeto de estudo. Em linhas gerais, as fontes primárias são os documentos, dados e materiais que constituem o objeto de estudo em si, enquanto as fontes secundárias são as referências bibliográficas que tratam do objeto de estudo.
+<center>
+```{mermaid}
+graph TD
+    A(Coleta de dados e referências bibliográficas) --> B(Análise das referências e estruturação dos dados)
+    B --> C(Preparação de um texto ou relatório para publicação)
+    C --> A
+```
+</center>
+
+Na primeira fase, o pesquisador deve buscar por fontes primárias e secundárias, bem como por dados que possam ser utilizados para a análise do objeto de estudo. Em linhas gerais, as fontes primárias são os documentos, dados e materiais que constituem o objeto de estudo em si, enquanto as fontes secundárias são as referências bibliográficas que tratam do objeto de estudo.
 
 ### Repositórios de referências
 <!-- [Scopus](https://www.scopus.com/), o [Web of Science](https://www.webofknowledge.com/) -->
 Para encontrar referências bibliográficas propriamente, confira o [Internet Archive Scholar](https://scholar.archive.org), [Research Rabbit](https://www.researchrabbit.ai), o [Google Scholar](https://scholar.google.com.br/), [Semantic Scholar](https://www.semanticscholar.org), [CrossRef](https://www.crossref.org),
  ou o [JSTOR](https://www.jstor.org/). Pesquisadores de diversas áreas também compartilham com frequência sua produção acadêmica em redes sociais, como [Academia.edu](https://www.academia.edu/), [ResearchGate](https://www.researchgate.net/), ou com o [Mendeley](https://www.mendeley.com/). Em alguns casos, é possível encontrar bibliografias anotadas e comentadas por acadêmicos na forma de publicações (*e.g.* [*Oxford Bibliographies in International Relations*](https://www.oxfordbibliographies.com/page/140)) ou nos sites pessoais de pesquisadoras.
 
-Em todo caso, o repositório de referências mais interessante para grupos ativos de pesquisa parece ser o Zotero Groups. O [Zotero](https://www.zotero.org) é um software livre, que permite a organização de referências em coleções, a inserção de citações e a formatação automática de referências em documentos. Já o [Zotero Groups](https://www.zotero.org/groups/) funciona como uma ferramenta na qual é possível organizar grupos de pesquisa com referências e arquivos compartilhados no qual todos podem visualizar e editar as mesmas referências e arquivos (de acordo com as configurações do grupo), sendo que há a possibilidade de compartilhamento com terceiros via interface online ou utilizando uma API.
-
-
-
 
 #### Repositórios de documentos
 
 O [Internet Archive](https://archive.org/) hospeda conteúdo em domínio público e torna possível retirar livros digitalmente em bibliotecas estrangeiras. Além disso, ele hospeda a Wayback Machine, responsável por fazer snapshots periódicos de uma grande parte do conteúdo da internet. Este recurso é importante para permitir referências estáveis em trabalhos acadêmicos. Nesta categoria temos ainda o [Arquivo Nacional](http://www.arquivonacional.gov.br), a [Europeana](https://www.europeana.eu/pt), a e [Biblioteca Digital Mundial](https://www.wdl.org/pt/) com coleções de museus, bibliotecas e arquivos de todo o mundo.
 
-#### Repositórios de dados
-
-Para acessar bancos de dados em domínio público, consulte o [Our World in Data](https://ourworldindata.org/), o [Gapminder](https://www.gapminder.org/), o [World Bank Open Data](https://data.worldbank.org/), o [UNdata](https://data.un.org/), o [World Bank DataBank](https://databank.worldbank.org/home.aspx), ou o [Portal Brasileiro de Dados Abertos](http://dados.gov.br/). Talvez o melhor repositório de dados seja o [Google Dataset Search](https://datasetsearch.research.google.com/), que permite buscar por conjuntos de dados em diversos repositórios. Apesar de não ser um repositório de dados propriamente, o [Github](https://github.com) frequentemente hospeda conjuntos de dados, e é uma boa fonte para encontrar scripts de raspagem de dados.
-
-### Coleta de dados
-
-A coleta de dados é uma tarefa que pode ser realizada de diversas formas. Dados podem ser coletados por meio de entrevistas, observação participante, ou por meio de questionários. Em outros casos, os dados podem ser coletados por meio de raspagem de dados de sites, ou por meio de APIs. Para este tipo de tarefa, o pesquisador pode utilizar ferramentas como o [Import.io](https://www.import.io/), o [Octoparse](https://www.octoparse.com/), ou o [ParseHub](https://www.parsehub.com/), ou scripts em [Python](https://www.python.org/), [R](https://www.r-project.org/), que podem ser escritos com o [Jupyter Notebooks](https://jupyter.org/), com [R Markdown](https://rmarkdown.rstudio.com/), ou outra linguagem de programação.^[Para aprender mais, consulte, em particular, [Python Humanities](https://pythonhumanities.com) e [Programming Historian](https://programminghistorian.org).] Em outros casos, os dados podem ser coletados por meio de experimentos, ou por meio de simulações computacionais.
+::: {.callout-tip}
+Não deixe de explorar o Internet Archive e os repositórios públicos de material digitalizado. Trata-se de uma fonte inestimável para qualquer pesquisa em humanidades que lida com documentos históricos.
+:::
 
 
 #### Repositórios de código
 
 Para encontrar códigos de programas, consulte o [Github](https://github.com), o [Gitlab](https://gitlab.com/), ou o [Bitbucket](https://bitbucket.org/). O Github é o maior repositório de código aberto do mundo, e é uma excelente fonte para encontrar códigos de programas. O Gitlab e o Bitbucket são uma alternativas ao Github, que também permitem hospedar códigos de programas. Aprender a navegar e utilizar o Github é uma habilidade importante para qualquer pesquisador, e pode ser aprendida por meio de tutoriais como [este](https://guides.github.com/activities/hello-world/).
 
-::: {.callout .callout-tip}
-Estudantes tem acesso gratuito ao [Github Pro](https://education.github.com/pack) por meio do [Github Education Pack](https://education.github.com/pack). Para ter acesso, basta criar uma conta no Github e solicitar o pacote utilizando o seu e-mail institucional (`@pucminas`). Com o Github Pro, é possível utilizar o [Github Co-Pilot](https://copilot.github.com/), um assistente de programação baseado em "inteligência" artificial.^[O Co-Pilot pode ser utilizado como uma extensão em um IDE (*Integrated Development Environment*). Primeiro, baixe o [Visual Studio Code](https://code.visualstudio.com/); em seguida, instale a extensão do [Co-Pilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot). Por fim, faça login no Github Co-Pilot no VS Code.]. Além disso, você terá acesso a diversos outros serviços, como o [Overleaf](https://www.overleaf.com), os IDEs do [Jet Brains](https://www.jetbrains.com/) e mais.
-:::
+
+#### Repositórios de dados
+
+Para acessar bancos de dados em domínio público, consulte o [Our World in Data](https://ourworldindata.org/), o [Gapminder](https://www.gapminder.org/), o [World Bank Open Data](https://data.worldbank.org/), o [UNdata](https://data.un.org/), o [World Bank DataBank](https://databank.worldbank.org/home.aspx), ou o [Portal Brasileiro de Dados Abertos](http://dados.gov.br/). Talvez o melhor repositório de dados seja o [Google Dataset Search](https://datasetsearch.research.google.com/), que permite buscar por conjuntos de dados em diversos repositórios. Apesar de não ser um repositório de dados propriamente, o [Github](https://github.com) frequentemente hospeda conjuntos de dados, e é uma boa fonte para encontrar scripts de raspagem de dados.
+
+#### Coleta de dados
+
+A coleta de dados é uma tarefa que pode ser realizada de diversas formas. Dados podem ser coletados por meio de entrevistas, observação participante, ou por meio de questionários. Em outros casos, os dados podem ser coletados por meio de raspagem de dados de sites, ou por meio de APIs. Para este tipo de tarefa, o pesquisador pode utilizar ferramentas como o [Import.io](https://www.import.io/), o [Octoparse](https://www.octoparse.com/), ou o [ParseHub](https://www.parsehub.com/), ou scripts em [Python](https://www.python.org/), [R](https://www.r-project.org/), que podem ser escritos com o [Jupyter Notebooks](https://jupyter.org/), com [R Markdown](https://rmarkdown.rstudio.com/), ou outra linguagem de programação.^[Para aprender mais, consulte, em particular, [Python Humanities](https://pythonhumanities.com) e [Programming Historian](https://programminghistorian.org).] Em outros casos, os dados podem ser coletados por meio de experimentos, ou por meio de simulações computacionais.
+
+
 
 
 **Consulte ainda:**

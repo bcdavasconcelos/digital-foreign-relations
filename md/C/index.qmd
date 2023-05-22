@@ -1,50 +1,128 @@
 ---
 title: "Publicação e divulgação"
-sidebar: false
-toc: false
-page-layout: full
+# sidebar: false
+# toc: false
+# page-layout: full
 ---
 
 
-## C. Publicação e divulgação
+## Linguagens de Marcação
 
-- [Pandoc](https://pandoc.org/)
-- [Markdown](https://www.markdownguide.org/)
-- [Scrivener](https://www.literatureandlatte.com/scrivener/overview)
-- [Ulysses](https://ulysses.app/)
-- [Manuscripts](https://www.manuscriptsapp.com/)
-- [iA Writer](https://ia.net/writer)
-- [Bear](https://bear.app/)
-- [Drafts](https://getdrafts.com/)
-- [Zettlr](https://www.zettlr.com/)
+Como um computador é capaz de estabelecer a *função* dos diferentes elementos textuais? Em outras palavras, como ele poderia separar um título e o corpo do texto? Um texto com link e um texto sem link? Como ele poderia saber que uma determinada seção não é parte do texto, mas apenas contém informações sobre ele?
+
+A resposta para estas questões pode ser encontrada em um recurso conhecido como *linguagem de marcação* (*markup language*). Em linha gerais, cada linguagem de marcação funciona como um conjunto de regras para agregar atributos a elementos do texto utilizando etiquetas. Estas etiquetas indicam para um programa que uma parte do texto tem uma determinada função ou que deve ser exibida de tal e tal modo. Nesta seção, veremos alguns exemplos do uso da sintaxe de algumas das linguagens mais conhecidas.
+
+### XML
+
+Um dado importante que nós leigos costumamos ignorar é que todo texto com estrutura em um computador (sem exceção) usa alguma linguagem de marcação. Programas como o *Microsoft Word* e outros processadores de texto também costumam utilizar (um tipo próprio de) *XML*. Quando selecionamos alguma palavra e a transformamos em um título, por exemplo, o programa adiciona as etiquetas ao seu redor sem que nos demos conta.[^16]
+
+
+### HTML
+
+A linguagem **HTML** é um excelente exemplo de como funciona uma linguagem de marcação convencional, não-minimalista. Ela usa etiquetas pré-definidas para representar uma página, sendo a linguagem utilizadas pelas páginas da internet e pelos e-books (arquivos com extensão `.``epub`, `.mobi` e `.azw`) (*cf.* [W3Schools](https://www.w3schools.com/)). Para definir as seções utiliza-se: `<``head``>`, `<body>`, `<``div``>`; para definir elementos: `<p>`, `<``table``>`, `<``form``>`, `<``image``>` e `<a>`; para definir a formatação do texto: `<h1>`, `<h2>`, `<h3>` etc., `<b>` e `<i>`.
+
+```html
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 id="título-de-nível-1">Título de nível 1</h1>
+        <h2 id="título-de-nível-2">Título de nível 2</h2>
+        <p>Texto em <em>itálico</em>, e texto em <strong>negrito</strong>.</p>
+        <blockquote><p>Texto de uma citação em bloco.</p></blockquote>
+        <p>E um <a href="www.google.com">link</a>.</p>
+    </body>
+</html>
+```
+
+Trata-se de um exemplo muito simples de texto em HTML. Exemplos mais complexos podem ser encontrados selecionando um item aleatório de uma página da internet com o clique secundário e selecionando em seguida a opção "Inspecionar Elemento", disponível na maior parte dos navegadores. A linguagem **XML** é um desdobramento de HTML e funciona do mesmo modo, com uma diferença significativa: não há etiquetas pré-definidas. É uma linguagem que serve, sobretudo, para guardar dados de uma maneira estruturada.
+
+### Markdown
+
+**Markdown**, em primeiro lugar, é a linguagem mais simples e minimalista disponível hoje. Seu nome é um trocadilho com a expressão *markup language* (*markup* ↑ *markdown* ↓) e arquivos utilizando esta linguagem geralmente levam a extensão `.md`.[^14] Ela foi [criada em 2004](https://daringfireball.net/projects/markdown/) por [John Gruber](https://en.wikipedia.org/wiki/John_Gruber) e [Aaron Swartz](http://www.aaronsw.com/weblog/001189) com o propósito de possibilitar a geração de texto HTML (utilizado em todas as páginas da web) a partir de uma alternativa mais legível e com menos distrações (compare o bloco abaixo em *Markdown* com o seguinte utilizando *HTML*).
+
+
+```markdown
+# Título de nível 1
+
+## Título de nível 2
+
+Texto em *itálico*, e texto em **negrito**.
+
+> Texto de uma citação em bloco.
+
+E um [link](http://www.google.com).
+```
+
+O que começou como uma opção bastante simples voltada apenas para a internet, evoluiu ao longo dos últimos 20 anos para se tornar uma linguagem extremamente popular com um bom conjunto de funcionalidades que preenche todos os requisitos para a produção de textos técnicos e acadêmicos (*cf.* [@Krewinkel2017]). Isso foi possível graças ao desenvolvimento do Pandoc, um conversor universal de documentos desenvolvido pelo professor de filosofia J. MacFarlane ([-@Pandoc]), que torna fácil a produção de arquivos em qualquer formato partindo de um simples arquivo em markdown.[^15]
+
+Para o humanista digital esta é uma linguagem extremamente relevante por dois motivos: (i.) é um dos meios mais fáceis marcar e estruturar um texto de fonte primária excessivamente longo; (ii.) é um dos meios mais práticos de registrar e manter anotações de pesquisa a longo prazo em um formato agnóstico que pode ser lido por qualquer programa e que não demanda que o usuário trabalhe constantemente utilizando um layout de impressão (*preview*), como se o texto fosse destinado à impressão imediata.
+
+### LaTeX
+
+É interessante mencionar ainda a existência de uma linguagem chamada **LaTeX** (pronuncia-se *latek*, e não látex). Trata-se de um sistema de tipografia de alta qualidade, utilizado para preparar livros e artigos para publicação. Nas ciências naturais e na matemática estudantes aprenderem desde cedo a escrever utilizando LaTeX para facilitar o trabalho com equações. Nas ciências humanas dificilmente encontramos a oferta ou a exigência de conhecimentos sobre LaTeX. Ainda sim, conhecer um pouco sobre o sistema pode ser excepcionalmente útil para a preparação de textos para a publicação.[^17]
+
+O propósito de compartilhar estes exemplos das diferentes linguagens de marcação é auxiliar leitores a se familiarizarem com o conceito, pois aprender a ler e utilizar cada uma delas em detalhe é um processo que demanda tempo e disposição para estudar a documentação com as especificações de cada uma delas. Um recurso que pode auxiliar muito neste processo são os *editores de texto*, que contam com funções específicas para lidar com a sintaxe das linguagens de marcação, como, por exemplo, (i.) o realce da sintaxe, (ii.) a opção de autocompletar e (iii.) a análise em busca de erros.[^18]
+
+::: {.callout .callout-tip}
+Estudantes tem acesso gratuito ao [Github Pro](https://education.github.com/pack) por meio do [Github Education Pack](https://education.github.com/pack). Para ter acesso, basta criar uma conta no Github e solicitar o pacote utilizando o seu e-mail institucional (`@pucminas`). Com o Github Pro, é possível utilizar o [Github Co-Pilot](https://copilot.github.com/), um assistente de programação baseado em "inteligência" artificial.^[O Co-Pilot pode ser utilizado como uma extensão em um IDE (*Integrated Development Environment*). Primeiro, baixe o [Visual Studio Code](https://code.visualstudio.com/); em seguida, instale a extensão do [Co-Pilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot). Por fim, faça login no Github Co-Pilot no VS Code.]. Além disso, você terá acesso a diversos outros serviços, como o [Overleaf](https://www.overleaf.com), os IDEs do [Jet Brains](https://www.jetbrains.com/) e mais. Veja ainda: [GitHub Guides](https://guides.github.com/), [GitHub Desktop](https://desktop.github.com/), [GitHub Pages](https://pages.github.com/)
+:::
+
+
+
+**Veja ainda:**
+
+- [Pandoc](https://pandoc.org/), [Quarto](https://quarto.org/) - para converter Markdown em documentos de Word, páginas HTML e arquivos PDF (e vice-versa)
+- [Zenodo](https://zenodo.org/) - para criar DOIs para publicações digitais
 - [Microsoft Word](https://www.microsoft.com/pt-br/microsoft-365/word)
 - [LibreOffice](https://pt-br.libreoffice.org/)
 - [Google Docs](https://www.google.com/intl/pt-BR/docs/about/)
-- [Apache OpenOffice](https://www.openoffice.org/pt-br/)
-- [WPS Office](https://www.wps.com/pt-BR/)
-- [OnlyOffice](https://www.onlyoffice.com/pt/)
-- [Zoho Writer](https://www.zoho.com/writer/)
-- [Calligra Words](https://calligra.org/words/)
-- [AbiWord](https://www.abisource.com/)
-- [SoftMaker FreeOffice](https://www.freeoffice.com/pt/)
-- [WordPerfect](https://www.wordperfect.com/en/)
-- [Obsidian](https://obsidian.md/)
-- [Roam Research](https://roamresearch.com/)
-- [Logseq](https://logseq.com/)
-- [RemNote](https://www.remnote.io/)
-- [Notion](https://www.notion.so/)
-- [TiddlyWiki](https://tiddlywiki.com/)
-
-
-
-
-- [Pandoc](https://pandoc.org/)
-- [Markdown](https://www.markdownguide.org/)
-- [Quarto](https://quarto.org/)
-- [Zenodo](https://zenodo.org/)
 - [Figshare](https://figshare.com/)
-- [Open Science Framework](https://osf.io/)
-- [Open Science Framework Preprints](https://osf.io/preprints/)
-
+- [Open Science Framework](https://osf.io/), [Open Science Framework Preprints](https://osf.io/preprints/)
 - [Cite Tools Quarto Extension at GitHub](https://)
 
+
+
+
+---
+references:
+- id: Krewinkel2017
+  author:
+    - family: Krewinkel
+      given: Albert
+    - family: Winkler
+      given: Robert
+  citation-key: Krewinkel2017
+  container-title: PeerJ Computer Science
+  issued:
+    - year: 2017
+  page: e112
+  title: >-
+    Formatting Open Science: agilely creating multiple document formats for
+    academic manuscripts with Pandoc Scholar
+  type: article-journal
+  volume: '3'
+- id: Pandoc
+  author:
+    - family: MacFarlane
+      given: John
+  call-number: 2022-02
+  citation-key: Pandoc
+  issued:
+    - year: 2006
+  title: 'Pandoc: A Universal Document Converter'
+  title-short: Pandoc
+  type: article-journal
+---
+
+
+
+
+[^14]: A rigor, não há nada que obrigue o uso de uma extensão específica em arquivos de qualquer uma das linguagens apresentadas aqui. Todos contêm apenas texto plano e poderiam ser modificados para utilizar a extensão `.txt` sem qualquer prejuízo ou perda de dados. A extensão é apenas um modo de indicar a sintaxe utilizada para o programa que irá abrir o arquivo.
+
+[^15]: "Because pandoc's intermediate representation of a document is less expressive than many of the formats it converts between, one should not expect perfect conversions between every format and every other. Pandoc attempts to preserve the structural elements of a document, but not formatting details such as margin size. And some document elements, such as complex tables, may not fit into pandoc's simple document model. *While conversions from pandoc's Markdown to all formats aspire to be perfect, conversions from formats more expressive than pandoc's Markdown can be expected to be lossy.*" [@Pandoc] (ênfase nossa). Utilizando o Pandoc, é possível transformar um texto em Markdown em praticamente qualquer outro formato existente, de um eBook a um livro acabado, passando por documentos em `rtf`, `latex`, `docx` ou `html`. É mais fácil obter um produto com alta qualidade tipográfica utilizando Markdown + Pandoc do que qualquer outro processador de texto, como o *Word* (este texto, inclusive, foi redigido utilizando markdown).
+
+[^16]: Não há nenhum problema nesse procedimento, mas ao utilizar o formato docx, por exemplo, é importante ter consciência de que estamos armazenando nossas anotações em uma linguagem que apenas um programa específico de uma empresa privada consegue interpretar e exibir.
+
+[^17]: Para a preparação de minha própria tese, criei um modelo que facilita a conversão de documentos do formato Markdown para LaTeX (cf. `github.com/bcdavasconcelos/ABNTeX-o-matic`).
+
+[^18]: Tendo em vista que a maior parte dos editores de texto compartilha de um núcleo comum de funções, como integração com o sistema git de versões e acesso integrado ao terminal/shell, a questão de qual programa utilizar é, em grande medida, uma questão de preço, preferências pessoais e de compatibilidade. Opções para Windows e Linux incluem [Visual Studio Code](https://code.visualstudio.com/) e [Atom](https://atom.io); opções para macOS incluem, além destas três últimas, [Nova](https://nova.app), [TextMate](http://www.macromates.com/) e [BBEdit](https://www.barebones.com/products/bbedit/). Eventualmente algumas tarefas serão mais fáceis de executar em um programa do que em outro, mas, em última instância, todos são bem equipados e capazes de realizar as tarefas mais importantes.
